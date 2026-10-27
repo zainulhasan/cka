@@ -103,3 +103,4 @@ a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid
 .markdown-section :is(p, li, td, th, blockquote) code { font-size: .92em !important }
 .markdown-section :is(p, li, td, th, blockquote, summary, h1, h2, h3, h4) { word-spacing: var(--ws) !important }
 .markdown-section :is(code, pre, pre *) { word-spacing: normal !important }
+.markdown-section :is(h1, h2, h3, h4) a, .markdown-section :is(h1, h2, h3, h4) a:hover { text-decoration: none !important; border-bottom: 0 !important }
