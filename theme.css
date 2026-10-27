@@ -104,3 +104,18 @@ a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid
 .markdown-section :is(p, li, td, th, blockquote, summary, h1, h2, h3, h4) { word-spacing: var(--ws) !important }
 .markdown-section :is(code, pre, pre *) { word-spacing: normal !important }
 .markdown-section :is(h1, h2, h3, h4) a, .markdown-section :is(h1, h2, h3, h4) a:hover { text-decoration: none !important; border-bottom: 0 !important }
+
+/* desktop: collapsible sidebar with our own toggle; phones keep docsify's built-in menu button */
+#nav-toggle { display: none }
+@media (min-width: 769px) {
+  .sidebar-toggle { display: none }
+  .content { transition: left .25s ease-out }
+  body.nav-closed .sidebar { transform: translateX(-100%) }
+  body.nav-closed .content { left: 0 }
+  #nav-toggle { display: inline-flex; align-items: center; gap: .5em; position: fixed; z-index: 40; top: 14px; left: 356px; transition: left .25s ease-out;
+    background: var(--surf); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: .5em .85em; cursor: pointer;
+    font: 500 14px/1 var(--mono); word-spacing: normal }
+  body.nav-closed #nav-toggle { left: 16px }
+  #nav-toggle:hover { border-color: var(--acc); color: var(--hover) }
+  #nav-toggle kbd { font: 400 12px var(--mono); color: var(--mut); border: 1px solid var(--line); border-radius: 4px; padding: .1em .4em }
+}

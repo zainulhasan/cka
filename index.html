@@ -9,9 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
-  <link rel="stylesheet" href="theme.css?v=6">
+  <link rel="stylesheet" href="theme.css?v=7">
 </head>
 <body>
+  <button id="nav-toggle" type="button" aria-controls="app" aria-expanded="true"><span id="nav-label">Hide menu</span> <kbd>m</kbd></button>
   <div id="app">Loading...</div>
   <script>
     window.$docsify = {
@@ -42,6 +43,23 @@
         actorBkg: '#352f40', actorBorder: '#ff8f70', actorTextColor: '#e8e3ec', signalColor: '#a39bad', signalTextColor: '#e8e3ec'
       }
     });
+  </script>
+  <script>
+    (function () {
+      var b = document.body, btn = document.getElementById('nav-toggle'), label = document.getElementById('nav-label');
+      function set(closed) {
+        b.classList.toggle('nav-closed', closed);
+        btn.setAttribute('aria-expanded', String(!closed));
+        label.textContent = closed ? 'Show menu' : 'Hide menu';
+        try { localStorage.setItem('navClosed', closed ? '1' : '0'); } catch (e) {}
+      }
+      try { if (localStorage.getItem('navClosed') === '1') set(true); } catch (e) {}
+      btn.addEventListener('click', function () { set(!b.classList.contains('nav-closed')); });
+      document.addEventListener('keydown', function (e) {
+        var t = e.target.tagName;
+        if (e.key === 'm' && !e.metaKey && !e.ctrlKey && !e.altKey && t !== 'INPUT' && t !== 'TEXTAREA') set(!b.classList.contains('nav-closed'));
+      });
+    })();
   </script>
 </body>
 </html>
