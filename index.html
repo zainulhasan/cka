@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <title>CKA / CKAD Study Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#1d1a22">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -22,6 +27,20 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
-  <script>mermaid.initialize({ startOnLoad: false });</script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: false, theme: 'base',
+      themeVariables: {
+        background: '#272330', fontFamily: 'JetBrains Mono, ui-monospace, monospace', fontSize: '15px',
+        primaryColor: '#352f40', primaryTextColor: '#e8e3ec', primaryBorderColor: '#ff8f70',
+        secondaryColor: '#2c2736', tertiaryColor: '#272330', lineColor: '#a39bad', textColor: '#e8e3ec',
+        noteBkgColor: '#352f40', noteTextColor: '#e8e3ec', edgeLabelBackground: '#272330',
+        actorBkg: '#352f40', actorBorder: '#ff8f70', actorTextColor: '#e8e3ec', signalColor: '#a39bad', signalTextColor: '#e8e3ec'
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+/* Dusk (dark): plum-grey ground, coral accent, JetBrains Mono at 20px. Palette chosen from the reading-style picker. */
+:root {
+  --bg: #1d1a22; --surf: #272330; --fg: #e8e3ec; --mut: #a39bad; --acc: #ff8f70; --line: #3a3445;
+  --key: #ffb199; --str: #a8dcc0; --num: #f2c879; --fn: #9fc7ff;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fs: 20px; --lh: 1.75;
+}
+html { color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 400 var(--fs)/var(--lh) var(--mono); -webkit-font-smoothing: antialiased }
+::selection { background: var(--acc); color: var(--bg) }
+
+/* sidebar */
+.sidebar { background: var(--surf); border-right: 1px solid var(--line); width: 340px; color: var(--fg); font-size: 14px; line-height: 1.5 }
+.sidebar > h1 { margin: 0 0 1rem; padding: 0 1rem }
+.sidebar > h1 .app-name-link { color: var(--acc); font: 700 18px var(--mono) }
+.sidebar ul li a { color: var(--mut); font: 400 14px/1.45 var(--mono); border-bottom: 0; padding: .28em 0 }
+.sidebar ul li a:hover { text-decoration: none; color: var(--fg) }
+.sidebar ul li.active > a { color: var(--acc); border-right: 3px solid var(--acc); font-weight: 700 }
+.sidebar ul li { margin: 0 }
+.sidebar-nav > ul > li { margin-top: .9em }
+.sidebar-nav > ul > li > a { color: var(--fg); font-weight: 700 }
+.sidebar-nav ul ul { padding-left: 0 }
+.sidebar::-webkit-scrollbar-thumb { background: var(--line) }
+.sidebar .search { border-bottom: 1px solid var(--line); margin-bottom: .5rem }
+.sidebar .search input { background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; font: 400 14px var(--mono); padding: .6em .8em }
+.sidebar .search .results-panel, .sidebar .search .matching-post { color: var(--fg) }
+.sidebar .search .matching-post { border-bottom-color: var(--line) }
+.sidebar .search p { color: var(--mut) }
+.sidebar-toggle { background: transparent }
+.sidebar-toggle span { background-color: var(--fg) }
+
+/* reading column */
+.content { left: 340px; background: var(--bg) }
+.markdown-section { max-width: 72ch; padding: 40px 28px 96px; font-size: var(--fs); line-height: var(--lh); color: var(--fg) }
+.markdown-section :is(h1,h2,h3,h4) { font-family: var(--mono); font-weight: 700; margin: 0; line-height: 1.3 }
+.markdown-section h1 { font-size: 1.9em; line-height: 1.22; margin: 0 0 .7em; text-wrap: balance }
+.markdown-section h2 { font-size: 1.28em; margin: 2.2em 0 .7em; padding-top: 1em; border-top: 1px solid var(--line); color: var(--acc) }
+.markdown-section h3 { font-size: 1.08em; margin: 1.8em 0 .5em; color: var(--key) }
+.markdown-section p, .markdown-section ul, .markdown-section ol { margin: 0 0 1.15em; line-height: var(--lh) }
+.markdown-section li { margin-bottom: .4em }
+.markdown-section a { color: var(--acc); border-bottom: 1px solid color-mix(in srgb, var(--acc) 45%, transparent); text-decoration: none }
+.markdown-section a:hover { border-bottom-color: var(--acc) }
+.markdown-section strong { color: var(--fg); font-weight: 700 }
+.markdown-section em { color: var(--fg) }
+.markdown-section hr { border: 0; border-top: 1px solid var(--line); margin: 2.2em 0 }
+
+.markdown-section blockquote { background: var(--surf); border-left: 3px solid var(--acc); border-radius: 0 8px 8px 0; margin: 0 0 1.5em; padding: .7em 1em; color: var(--mut); font-size: .86em }
+.markdown-section blockquote p { margin: 0; color: inherit }
+
+/* code */
+.markdown-section code { font: 400 .88em var(--mono); background: var(--surf); color: var(--key); padding: .08em .4em; border-radius: 5px }
+.markdown-section pre { background: var(--surf); border: 1px solid var(--line); border-radius: 10px; margin: 0 0 1.4em; padding: 0; overflow-x: auto }
+.markdown-section pre > code { display: block; background: none; color: var(--fg); font-size: .84em; line-height: 1.65; padding: 1em 1.1em }
+.markdown-section pre[data-lang]::after { color: var(--mut); font: 500 11px var(--mono); letter-spacing: .08em; top: .5em; right: .9em }
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: var(--mut); font-style: italic }
+.token.punctuation, .token.operator { color: var(--mut) }
+.token.property, .token.tag, .token.key, .token.atrule, .token.attr-name, .token.keyword, .token.selector { color: var(--key) }
+.token.string, .token.attr-value, .token.char, .token.builtin, .token.inserted { color: var(--str) }
+.token.number, .token.boolean, .token.constant, .token.symbol { color: var(--num) }
+.token.function, .token.class-name, .token.variable, .token.parameter { color: var(--fn) }
+.token.deleted, .token.important { color: var(--acc) }
+
+/* tables */
+.markdown-section table { display: block; overflow-x: auto; border-collapse: collapse; margin: 0 0 1.5em; border: 1px solid var(--line); border-radius: 10px; font-size: .8em; line-height: 1.55; width: max-content; max-width: 100% }
+.markdown-section th { background: var(--surf); color: var(--mut); font: 700 .82em var(--mono); text-transform: uppercase; letter-spacing: .06em; text-align: left }
+.markdown-section th, .markdown-section td { padding: .65em .9em; border: 0; border-bottom: 1px solid var(--line); vertical-align: top }
+.markdown-section tr { border: 0; background: transparent }
+.markdown-section tr:nth-child(2n) { background: transparent }
+.markdown-section tr:last-child td { border-bottom: 0 }
+
+/* collapsed answers */
+.markdown-section details { border: 1px solid var(--line); border-radius: 8px; padding: .7em 1em; margin: 0 0 1.2em; background: transparent }
+.markdown-section details[open] { background: var(--surf) }
+.markdown-section summary { cursor: pointer; color: var(--acc); font: 500 .85em var(--mono) }
+.markdown-section details > :not(summary):first-of-type { margin-top: .8em }
+
+/* diagrams */
+.markdown-section .mermaid { background: var(--surf); border: 1px solid var(--line); border-radius: 10px; padding: 1em; margin: 0 0 1.4em; overflow-x: auto; text-align: center }
+
+/* checklist items */
+.markdown-section input[type=checkbox] { accent-color: var(--acc) }
+.progress { background: var(--acc) }
+a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px }
+
+@media (max-width: 760px) {
+  :root { --fs: 17px }
+  .sidebar { width: 85vw }
+  .content { left: 0 }
+  .markdown-section { padding: 28px 16px 72px }
+}
