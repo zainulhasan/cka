@@ -130,3 +130,11 @@ These fixed the problems that cost the pilots 2+ fix rounds each. Check each one
 **Fix passes**
 - Before returning a corrected lesson, re-check that every earlier fix and every checklist item from the entry is still present (a fix pass once dropped a row that an earlier pass had added). Then append the changelog.
 - Cross-links use the exact form in §4 (`../part3-ckad/T3.09-<slug>.md`), including between files in the same directory.
+
+## 11. Capturing real output on kind (allowed, with limits)
+A pilot writer showed that real kind output can be captured from this machine (Docker is running). Do it for kind topics when you can, so the lesson has real output instead of `EXPECTED OUTPUT (not captured)`. VM-only topics (linux-vm and vms) still cannot be captured; keep their labels.
+- **One cluster at a time, machine-wide.** Take the lock first: `until mkdir /tmp/kind-lab.lock 2>/dev/null; do sleep 20; done` (give up after 20 minutes and label your outputs expected instead). Release it with `rmdir /tmp/kind-lab.lock` when you have deleted your cluster. Always release it, even on failure.
+- **Use your own cluster name** `k-<topicid without dots>` (for example `k-t312`), the pinned `kindest/node:v1.37.0` image and 1 control plane + 2 workers. Use `env/kind.yaml` but you may drop `extraPortMappings` unless the lesson needs port 30080. Keep the kind binary in the scratchpad or `$TMPDIR`, never in the repo.
+- **Delete your cluster when done** (`kind delete cluster --name k-<id>`) and never leave containers running.
+- Paste only output you actually saw. Real output is labelled by the environment it came from, for example `REAL OUTPUT (kind v0.33.0, v1.37.0)`.
+- A capture that fails or times out is not a reason to invent output: label that block expected and list it in section 11.
