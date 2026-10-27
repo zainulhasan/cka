@@ -95,3 +95,9 @@ a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid
   .content { left: 0 }
   .markdown-section { padding: 28px 16px 72px }
 }
+
+/* the base theme sets code to .8rem and paragraphs to .95em; force the reading sizes */
+.markdown-section :is(p, li) { font-size: 1em !important }
+.markdown-section pre { font-size: 1em !important }
+.markdown-section pre > code { font-size: .95em !important }
+.markdown-section :is(p, li, td, th, blockquote) code { font-size: .92em !important }
