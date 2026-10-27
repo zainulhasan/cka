@@ -6,21 +6,21 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 
 | ID | Topic | Hours | Status |
 |---|---|---|---|
-| T1.01 | Bash shell essentials for exam speed | 3 | not written yet |
-| T1.02 | Text processing: grep, sed, awk, cut, sort, find, xargs | 3 | not written yet |
-| T1.03 | Vim and tmux for YAML editing | 2 | not written yet |
-| T1.04 | Users, groups, permissions and sudo | 2 | not written yet |
-| T1.05 | Processes and signals | 2 | not written yet |
-| T1.06 | systemd and journalctl | 3 | not written yet |
-| T1.07 | Linux networking I: interfaces, IPs, routes, bridges, veth | 3 | not written yet |
-| T1.08 | Linux networking II: DNS, ports, sockets and test tools | 3 | not written yet |
-| T1.09 | Packet filtering: iptables and nftables basics | 3 | not written yet |
+| T1.01 | [Bash shell essentials for exam speed](part1-linux/T1.01-bash-shell-essentials-for-exam-speed.md) | 3 | written (1 review + 1 fix) |
+| T1.02 | [Text processing: grep, sed, awk, cut, sort, find, xargs](part1-linux/T1.02-text-processing-grep-sed-awk-cut.md) | 3 | written (1 review + 1 fix) |
+| T1.03 | [Vim and tmux for YAML editing](part1-linux/T1.03-vim-and-tmux-for-yaml-editing.md) | 2 | written (1 review + 1 fix) |
+| T1.04 | [Users, groups, permissions and sudo](part1-linux/T1.04-users-groups-permissions-and-sudo.md) | 2 | written (1 review + 1 fix) |
+| T1.05 | [Processes and signals](part1-linux/T1.05-processes-and-signals.md) | 2 | written (1 review + 1 fix) |
+| T1.06 | [systemd and journalctl](part1-linux/T1.06-systemd-and-journalctl.md) | 3 | written (1 review + 1 fix) |
+| T1.07 | [Linux networking I: interfaces, IPs, routes, bridges, veth](part1-linux/T1.07-linux-networking-i-interfaces-ips-routes.md) | 3 | written (1 review + 1 fix) |
+| T1.08 | [Linux networking II: DNS, ports, sockets and test tools](part1-linux/T1.08-linux-networking-ii-dns-ports-sockets.md) | 3 | written (1 review + 1 fix) |
+| T1.09 | [Packet filtering: iptables and nftables basics](part1-linux/T1.09-packet-filtering-iptables-and-nftables-basics.md) | 3 | written (1 review + 1 fix) |
 | T1.10 | [Linux namespaces and cgroups v2](part1-linux/T1.10-linux-namespaces-and-cgroups-v2.md) | 3 | ready |
-| T1.11 | Containers: images, registries and runtimes (OCI, containerd, runc, crictl) | 3 | not written yet |
-| T1.12 | TLS, PKI and openssl for Kubernetes | 3 | not written yet |
-| T1.13 | YAML and JSON with jq, yq and JSONPath | 2 | not written yet |
-| T1.14 | SSH and remote work across nodes | 1.5 | not written yet |
-| T1.15 | Packages, kernel modules, sysctl, swap and disks | 2 | not written yet |
+| T1.11 | [Containers: images, registries and runtimes (OCI, containerd, runc, crictl)](part1-linux/T1.11-containers-images-registries-and-runtimes-oci.md) | 3 | written (1 review + 1 fix) |
+| T1.12 | [TLS, PKI and openssl for Kubernetes](part1-linux/T1.12-tls-pki-and-openssl-for-kubernetes.md) | 3 | written (1 review + 1 fix) |
+| T1.13 | [YAML and JSON with jq, yq and JSONPath](part1-linux/T1.13-yaml-and-json-with-jq-yq.md) | 2 | ready |
+| T1.14 | [SSH and remote work across nodes](part1-linux/T1.14-ssh-and-remote-work-across-nodes.md) | 1.5 | written (1 review + 1 fix) |
+| T1.15 | [Packages, kernel modules, sysctl, swap and disks](part1-linux/T1.15-packages-kernel-modules-sysctl-swap-and.md) | 2 | ready |
 
 ## Part 2 - Kubernetes basics
 

@@ -25,7 +25,7 @@ for part in "1234":
     for tid, _, title in pt:
         f = lesson(tid, part)
         st = status.get(tid, "")
-        tag = {"PASS": "ready", "NEEDS-HUMAN": "written, has a known error"}.get(st, "written" if f else "not written yet")
+        tag = {"PASS": "ready", "FIXED": "written (1 review + 1 fix)", "NEEDS-HUMAN": "written, has a known error"}.get(st, "written" if f else "not written yet")
         if f:
             side.append(f"  * [{tid} {title}]({dirs[part]}/{f.name}){' [needs fix]' if st == 'NEEDS-HUMAN' else ''}")
             road.append(f"| {tid} | [{title}]({dirs[part]}/{f.name}) | {hours.get(tid, '')} | {tag} |")

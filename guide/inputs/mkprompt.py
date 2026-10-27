@@ -40,12 +40,16 @@ PREREQUISITES (cross-link to them, do not re-teach; the files may not exist yet,
 {sec(5)}
 """)
 elif kind == "reviewer":
+    suf = sys.argv[3] if len(sys.argv) > 3 else ""
+    rep = f"{i}-review{'-' + suf if suf else ''}.md"
     print(blocks[1].replace("{{TOPIC_ENTRY}}", entry(i)).replace("{{LESSON}}", f"[READ THE FILE: /Users/zain/projects/cka/guide/{path(i)}]"))
     print(f"""
 
 === ADDITIONAL INPUTS ===
-Read the lesson file above with the Read tool (the whole file). Also read /Users/zain/projects/cka/guide/00-conventions.md and check the lesson against it, including section 9 (depth): list shallow or list-only subtopics as MAJOR.
-Write your report to /Users/zain/projects/cka/guide/reviews/{i}-review.md (table + final line "VERDICT: PASS" or "VERDICT: FAIL") and reply with only the verdict and the number of blocker/major/minor items.
+Read the lesson file above with the Read tool (the whole file, in chunks with offset/limit if it is large). Also read /Users/zain/projects/cka/guide/00-conventions.md and check the lesson against it, including section 9 (depth: list shallow or list-only subtopics as MAJOR) and sections 10-11.
+You cannot re-run commands. Blocks labelled as real captures: judge them for plausibility and internal consistency (paths, values, units), not as unverified. ACCEPTED LIMITATION: output blocks labelled exactly "EXPECTED OUTPUT (not captured)" that are listed in section 11 under a "Known limitation" paragraph (no live cluster or VM available) must NOT be raised as a major on their own. Everything else (wrong flags, wrong ports, checks that cannot fail or cannot pass, unsourced exam claims, missing entry items) is in scope.
+Do not edit the lesson. Do not read any earlier review report for this topic.
+Write your report to /Users/zain/projects/cka/guide/reviews/{rep} (table "Severity | Section | Problem | Fix", then a final line "VERDICT: PASS" or "VERDICT: FAIL") and reply with only the verdict and the number of blocker/major/minor items.
 Exam facts may be checked against summary §2:
 {sec(2)}
 """)
