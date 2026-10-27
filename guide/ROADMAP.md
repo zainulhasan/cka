@@ -26,7 +26,7 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 
 | ID | Topic | Hours | Status |
 |---|---|---|---|
-| T2.01 | Kubernetes architecture and the API model | 3 | not written yet |
+| T2.01 | [Kubernetes architecture and the API model](part2-basics/T2.01-kubernetes-architecture-and-the-api-model.md) | 3 | written |
 | T2.02 | kubectl fluency and productivity | 4 | not written yet |
 | T2.03 | Pods in depth | 3 | not written yet |
 | T2.04 | Labels, selectors, annotations and namespaces | 2 | not written yet |
@@ -52,7 +52,7 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 | T3.09 | Implement probes and health checks | 2.5 | not written yet |
 | T3.10 | Deployments and rolling updates | 2.5 | not written yet |
 | T3.11 | Deployment strategies with primitives: blue/green and canary | 2 | not written yet |
-| T3.12 | [Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md) | 3 | written, has a known error |
+| T3.12 | [Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md) | 3 | written (1 review + 1 fix) |
 | T3.13 | Use Ingress rules to expose applications | 2.5 | not written yet |
 | T3.14 | Demonstrate basic understanding of NetworkPolicies | 3 | not written yet |
 | T3.15 | Understand ServiceAccounts | 2 | not written yet |
@@ -73,7 +73,7 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 | T4.01 | Prepare underlying infrastructure for a Kubernetes cluster | 3 | not written yet |
 | T4.02 | Create and manage Kubernetes clusters using kubeadm | 4 | not written yet |
 | T4.03 | Understand extension interfaces: CNI, CSI, CRI | 2.5 | not written yet |
-| T4.04 | [Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md) | 5 | written, has a known error |
+| T4.04 | [Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md) | 5 | written (1 review + 1 fix) |
 | T4.05 | Implement and configure a highly-available control plane | 3.5 | not written yet |
 | T4.06 | Manage role based access control (RBAC) | 3 | not written yet |
 | T4.07 | Use Helm and Kustomize to install cluster components | 2.5 | not written yet |

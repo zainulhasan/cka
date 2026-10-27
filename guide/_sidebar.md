@@ -18,8 +18,9 @@
   * [T1.13 YAML and JSON with jq, yq and JSONPath](part1-linux/T1.13-yaml-and-json-with-jq-yq.md)
   * [T1.14 SSH and remote work across nodes](part1-linux/T1.14-ssh-and-remote-work-across-nodes.md)
   * [T1.15 Packages, kernel modules, sysctl, swap and disks](part1-linux/T1.15-packages-kernel-modules-sysctl-swap-and.md)
-* Part 2 - Kubernetes basics (0 of 10 written)
+* Part 2 - Kubernetes basics (1 of 10 written)
+  * [T2.01 Kubernetes architecture and the API model](part2-basics/T2.01-kubernetes-architecture-and-the-api-model.md)
 * Part 3 - CKAD (1 of 24 written)
-  * [T3.12 Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md) [needs fix]
+  * [T3.12 Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md)
 * Part 4 - CKA (1 of 27 written)
-  * [T4.04 Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md) [needs fix]
+  * [T4.04 Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md)
