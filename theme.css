@@ -101,3 +101,5 @@ a:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid
 .markdown-section pre { font-size: 1em !important }
 .markdown-section pre > code { font-size: .95em !important }
 .markdown-section :is(p, li, td, th, blockquote) code { font-size: .92em !important }
+.markdown-section :is(p, li, td, th, blockquote, summary, h1, h2, h3, h4) { word-spacing: var(--ws) !important }
+.markdown-section :is(code, pre, pre *) { word-spacing: normal !important }
