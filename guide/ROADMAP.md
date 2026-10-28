@@ -26,30 +26,30 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 
 | ID | Topic | Hours | Status |
 |---|---|---|---|
-| T2.01 | [Kubernetes architecture and the API model](part2-basics/T2.01-kubernetes-architecture-and-the-api-model.md) | 3 | written |
-| T2.02 | kubectl fluency and productivity | 4 | not written yet |
+| T2.01 | [Kubernetes architecture and the API model](part2-basics/T2.01-kubernetes-architecture-and-the-api-model.md) | 3 | written (1 review + 1 fix) |
+| T2.02 | [kubectl fluency and productivity](part2-basics/T2.02-kubectl-fluency-and-productivity.md) | 4 | written (1 review + 1 fix) |
 | T2.03 | Pods in depth | 3 | not written yet |
-| T2.04 | Labels, selectors, annotations and namespaces | 2 | not written yet |
-| T2.05 | Controllers: ReplicaSets, Deployments (basics) and garbage collection | 2 | not written yet |
+| T2.04 | [Labels, selectors, annotations and namespaces](part2-basics/T2.04-labels-selectors-annotations-and-namespaces.md) | 2 | written (1 review + 1 fix) |
+| T2.05 | [Controllers: ReplicaSets, Deployments (basics) and garbage collection](part2-basics/T2.05-controllers-replicasets-deployments-basics-and-garbage.md) | 2 | written (1 review + 1 fix) |
 | T2.06 | Services and EndpointSlices fundamentals | 2 | not written yet |
-| T2.07 | Declarative object management: apply, diff, patch, replace | 2 | not written yet |
-| T2.08 | Events, describe and reading object status | 1.5 | not written yet |
-| T2.09 | Local practice clusters: kind and minikube | 1.5 | not written yet |
-| T2.10 | Exam environment, docs navigation and time strategy | 1.5 | not written yet |
+| T2.07 | [Declarative object management: apply, diff, patch, replace](part2-basics/T2.07-declarative-object-management-apply-diff-patch.md) | 2 | written (1 review + 1 fix) |
+| T2.08 | [Events, describe and reading object status](part2-basics/T2.08-events-describe-and-reading-object-status.md) | 1.5 | written (1 review + 1 fix) |
+| T2.09 | [Local practice clusters: kind and minikube](part2-basics/T2.09-local-practice-clusters-kind-and-minikube.md) | 1.5 | written (1 review + 1 fix) |
+| T2.10 | [Exam environment, docs navigation and time strategy](part2-basics/T2.10-exam-environment-docs-navigation-and-time.md) | 1.5 | ready |
 
 ## Part 3 - CKAD
 
 | ID | Topic | Hours | Status |
 |---|---|---|---|
-| T3.01 | Define, build and modify container images | 3 | not written yet |
+| T3.01 | [Define, build and modify container images](part3-ckad/T3.01-define-build-and-modify-container-images.md) | 3 | written (1 review + 1 fix) |
 | T3.02 | Choose and use the right workload resource | 4 | not written yet |
-| T3.03 | ConfigMaps | 2 | not written yet |
+| T3.03 | [ConfigMaps](part3-ckad/T3.03-configmaps.md) | 2 | written (1 review + 1 fix) |
 | T3.04 | Create & consume Secrets | 2 | not written yet |
-| T3.05 | Define resource requirements | 2 | not written yet |
+| T3.05 | [Define resource requirements](part3-ckad/T3.05-define-resource-requirements.md) | 2 | written (1 review + 1 fix) |
 | T3.06 | Requests, limits and quotas: ResourceQuota and LimitRange | 2.5 | not written yet |
 | T3.07 | Utilize persistent and ephemeral volumes | 3.5 | not written yet |
 | T3.08 | Multi-container Pod patterns: init, sidecar, adapter, ambassador | 3 | not written yet |
-| T3.09 | Implement probes and health checks | 2.5 | not written yet |
+| T3.09 | [Implement probes and health checks](part3-ckad/T3.09-implement-probes-and-health-checks.md) | 2.5 | ready |
 | T3.10 | Deployments and rolling updates | 2.5 | not written yet |
 | T3.11 | Deployment strategies with primitives: blue/green and canary | 2 | not written yet |
 | T3.12 | [Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md) | 3 | written (1 review + 1 fix) |
@@ -70,11 +70,11 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 
 | ID | Topic | Hours | Status |
 |---|---|---|---|
-| T4.01 | Prepare underlying infrastructure for a Kubernetes cluster | 3 | not written yet |
-| T4.02 | Create and manage Kubernetes clusters using kubeadm | 4 | not written yet |
-| T4.03 | Understand extension interfaces: CNI, CSI, CRI | 2.5 | not written yet |
+| T4.01 | [Prepare underlying infrastructure for a Kubernetes cluster](part4-cka/T4.01-prepare-underlying-infrastructure-for-a-kubernetes.md) | 3 | written (1 review + 1 fix) |
+| T4.02 | [Create and manage Kubernetes clusters using kubeadm](part4-cka/T4.02-create-and-manage-kubernetes-clusters-using.md) | 4 | ready |
+| T4.03 | [Understand extension interfaces: CNI, CSI, CRI](part4-cka/T4.03-understand-extension-interfaces-cni-csi-cri.md) | 2.5 | written (1 review + 1 fix) |
 | T4.04 | [Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md) | 5 | written (1 review + 1 fix) |
-| T4.05 | Implement and configure a highly-available control plane | 3.5 | not written yet |
+| T4.05 | [Implement and configure a highly-available control plane](part4-cka/T4.05-implement-and-configure-a-highly-available.md) | 3.5 | written (1 review + 1 fix) |
 | T4.06 | Manage role based access control (RBAC) | 3 | not written yet |
 | T4.07 | Use Helm and Kustomize to install cluster components | 2.5 | not written yet |
 | T4.08 | Understand CRDs, install and configure operators | 2.5 | not written yet |
@@ -86,7 +86,7 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 | T4.14 | Configure volume types, access modes and reclaim policies | 2 | not written yet |
 | T4.15 | Manage persistent volumes and persistent volume claims | 2 | not written yet |
 | T4.16 | Implement storage classes and dynamic volume provisioning | 2 | not written yet |
-| T4.17 | Understand connectivity between Pods | 2.5 | not written yet |
+| T4.17 | [Understand connectivity between Pods](part4-cka/T4.17-understand-connectivity-between-pods.md) | 2.5 | ready |
 | T4.18 | Use ClusterIP, NodePort, LoadBalancer service types and endpoints | 2.5 | not written yet |
 | T4.19 | Understand and use CoreDNS | 2.5 | not written yet |
 | T4.20 | Define and enforce Network Policies | 2.5 | not written yet |

@@ -24,6 +24,29 @@ Decisions:
 | T1.13 | YAML and JSON with jq, yq and JSONPath | 2 | wf | PASS (0B/0M/9m) | 0 | PASS |  |
 | T1.14 | SSH and remote work across nodes | 3 | wf | FAIL (0B/1M/9m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
 | T1.15 | Packages, kernel modules, sysctl, swap and disks | 4 | wf | PASS (0B/0M/13m) | 0 | PASS |  |
+| T2.01 | Kubernetes architecture and the API model | 5 | wf | FAIL (0B/1M/10m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.02 | kubectl fluency and productivity | 6 | wf | FAIL (0B/1M/10m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.03 | Pods in depth | 7 | wf | - | 0 | TODO | writer failed (network lost, computer asleep); retrying |
+| T2.04 | Labels, selectors, annotations and namespaces | 7 | wf | FAIL (0B/1M/7m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.05 | Controllers: ReplicaSets, Deployments (basics) and garbage collection | 8 | wf | FAIL (0B/1M/9m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.06 | Services and EndpointSlices fundamentals | 8 | wf | - | 0 | TODO | writer failed (network lost); retrying |
+| T2.07 | Declarative object management: apply, diff, patch, replace | 7 | wf | FAIL (0B/2M/8m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.08 | Events, describe and reading object status | 8 | wf | FAIL (0B/2M/5m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.09 | Local practice clusters: kind and minikube | 6 | wf | FAIL (0B/3M/9m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T2.10 | Exam environment, docs navigation and time strategy | 7 | wf | PASS (0B/0M/8m) | 0 | PASS |  |
+| T3.01 | Define, build and modify container images | 7 | wf | FAIL (0B/2M/10m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T3.03 | ConfigMaps | 8 | wf | FAIL (0B/3M/7m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T3.05 | Define resource requirements | 8 | wf | FAIL (0B/2M/7m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T3.09 | Implement probes and health checks | 8 | wf | PASS (0B/0M/11m) | 0 | PASS |  |
+| T3.18 | Discover and use resources that extend Kubernetes: CRDs and Operators | 8 | wf | - | 0 | TODO | writer failed (network lost); retrying |
+| T3.19 | Use Helm to deploy existing packages | 8 | wf | - | 0 | TODO | writer failed (network lost); retrying |
+| T3.20 | Kustomize | 8 | wf | - | 0 | TODO | writer failed (network lost); retrying |
+| T3.21 | Understand API depreciations (API deprecations and migration) | 8 | wf | - | 0 | TODO | writer failed (network lost); retrying |
+| T4.01 | Prepare underlying infrastructure for a Kubernetes cluster | 5 | wf | FAIL (0B/3M/13m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T4.02 | Create and manage Kubernetes clusters using kubeadm | 6 | wf | PASS (0B/0M/8m) | 0 | PASS |  |
+| T4.03 | Understand extension interfaces: CNI, CSI, CRI | 7 | wf | FAIL (0B/5M/14m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T4.05 | Implement and configure a highly-available control plane | 8 | wf | FAIL (0B/2M/9m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T4.17 | Understand connectivity between Pods | 8 | wf | PASS (0B/0M/8m) | 0 | PASS |  |
 
 Decisions (cont.):
 - 2026-10-27: Re-reviews write to reviews/<ID>-review-r<N>.md so fix changelogs are not overwritten.
@@ -32,3 +55,4 @@ Decisions (cont.):
 - 2026-10-27: Pilot round done: T1.10 PASS; T3.12, T4.04 NEEDS-HUMAN. The T1.10 writer ran a real kind cluster (downloaded the kind binary), so kind-topic writers may capture real output under the lock rules in conventions section 11.
 - 2026-10-27: User rule: 1 review + 1 fix per lesson (no re-review). Statuses: PASS (clean first review), FIXED (reviewed once, fixed once, not re-checked). Fix agents are fresh agents, not the original writer. Group A (T1.01-T1.15, 14 topics) done: 2 PASS, 12 FIXED.
 - 2026-10-27: T3.12 and T4.04 each got a round-3 fix (the known blocker/major from their r3 reviews) from a fresh agent; status moved NEEDS-HUMAN -> FIXED, not re-reviewed.
+- 2026-10-28: Group B done: 4 PASS, 13 FIXED; 6 topics (T2.03, T2.06, T3.18-T3.21) had writer failures from a network loss while the computer slept; re-run together with group C. Started caffeinate to prevent sleep.
