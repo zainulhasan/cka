@@ -71,6 +71,14 @@ Decisions:
 | T4.20 | Define and enforce Network Policies | 11 | wf | PASS (0B/0M/9m) | 0 | PASS |  |
 | T4.21 | Know how to use Ingress controllers and Ingress resources | 11 | wf | PASS (0B/0M/7m) | 0 | PASS |  |
 | T4.24 | Monitor cluster and application resource usage | 10 | wf | FAIL (0B/2M/9m) | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T3.17 | Understand Application Security: SecurityContexts and capabilities | 12 | wf | FAIL | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T3.22 | Utilize container logs | 12 | wf | PASS | 0 | PASS |  |
+| T4.06 | Manage role based access control (RBAC) | 12 | wf | PASS | 0 | PASS |  |
+| T4.23 | Manage and evaluate container output streams | 13 | wf | FAIL | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T4.27 | Troubleshoot services and networking | 12 | wf | FAIL | 1 | FIXED | reviewed once, fixed once, not re-checked |
+| T4.13 | Configure Pod admission and scheduling (limits, node affinity, etc.) | 12 | wf | - | 0 | DRAFT | written, review pending |
+| T4.22 | Use the Gateway API to manage Ingress traffic | 12 | wf | - | 0 | DRAFT | written, review pending |
+| T4.25 | Troubleshoot cluster components | 14 | wf | - | 0 | DRAFT | written, review pending |
 
 Decisions (cont.):
 - 2026-10-27: Re-reviews write to reviews/<ID>-review-r<N>.md so fix changelogs are not overwritten.
@@ -81,3 +89,4 @@ Decisions (cont.):
 - 2026-10-27: T3.12 and T4.04 each got a round-3 fix (the known blocker/major from their r3 reviews) from a fresh agent; status moved NEEDS-HUMAN -> FIXED, not re-reviewed.
 - 2026-10-28: Group B done: 4 PASS, 13 FIXED; 6 topics (T2.03, T2.06, T3.18-T3.21) had writer failures from a network loss while the computer slept; re-run together with group C. Started caffeinate to prevent sleep.
 - 2026-10-28: Group C + retries (30 topics) done: 13 PASS, 17 FIXED, 0 failures. The 6 network-failed B topics are now written.
+- 2026-10-28: Local group D stopped to hand the remainder to a cloud run (see CLOUD-RUN.md). State: T3.22, T4.06 PASS; T3.17, T4.23, T4.27 FIXED; T4.13, T4.22, T4.25 DRAFT (no review yet); T3.24, T4.15, T4.16, T4.26 not written.

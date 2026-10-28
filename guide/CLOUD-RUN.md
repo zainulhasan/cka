@@ -20,8 +20,14 @@ You are the LEAD ORCHESTRATOR finishing a self-study guide (Linux -> Kubernetes 
 5. If a sub-agent fails or times out, retry once with the same inputs; then record it as NEEDS-HUMAN in `guide/PROGRESS.md` and continue.
 6. Do not stop to ask questions unless a file is missing. Decide, record the decision in `guide/PROGRESS.md`, continue.
 
-## Step 1: group D (the 12 missing lessons)
-Topics and prerequisites inside this set (a topic may start once its listed prerequisite has been written; at most 8 at a time):
+## Step 1: group D (12 lessons; some already started)
+A local run stopped part-way. Decide each topic's state from the files, not from this table alone:
+- Lesson file exists AND `guide/reviews/<ID>-review.md` exists AND (verdict PASS, or it already has a "Fix round 1 changelog"): DONE, do nothing. (Already done: T3.22, T4.06 PASS; T3.17, T4.23, T4.27 FIXED.)
+- Lesson file exists but no review report: skip the writer; start at the review (sub-step 2). (T4.13, T4.22, T4.25.)
+- Review verdict FAIL and no "Fix round 1 changelog": start at the fix pass (sub-step 3).
+- No lesson file: start at the writer. (T3.24, T4.15, T4.16, T4.26; T4.16 waits for T4.15, T4.26 waits for T4.25.)
+
+Topics and prerequisites inside this set (at most 8 at a time):
 
 | Topic | After |
 |---|---|
