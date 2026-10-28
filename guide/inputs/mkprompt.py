@@ -25,7 +25,7 @@ if kind == "writer":
     print(f"""
 
 === ADDITIONAL INPUTS ===
-YOUR OUTPUT FILE: /Users/zain/projects/cka/guide/{path(i)}  (write the full lesson there with the Write tool, then reply with a 5-line summary and the self-check checklist).
+YOUR OUTPUT FILE: {G}/{path(i)}  (write the full lesson there with the Write tool, then reply with a 5-line summary and the self-check checklist).
 ENVIRONMENT LIMITS: kind and multipass are NOT installed on this machine, so you cannot run cluster or VM labs. Label every such output block exactly "EXPECTED OUTPUT (not captured)" and list it in section 11. Docker is available if you want to test a plain Linux command in a container, but never claim it was a VM or kind result.
 PREREQUISITES (cross-link to them, do not re-teach; the files may not exist yet, link anyway):
 {pre}
@@ -42,17 +42,17 @@ PREREQUISITES (cross-link to them, do not re-teach; the files may not exist yet,
 elif kind == "reviewer":
     suf = sys.argv[3] if len(sys.argv) > 3 else ""
     rep = f"{i}-review{'-' + suf if suf else ''}.md"
-    print(blocks[1].replace("{{TOPIC_ENTRY}}", entry(i)).replace("{{LESSON}}", f"[READ THE FILE: /Users/zain/projects/cka/guide/{path(i)}]"))
+    print(blocks[1].replace("{{TOPIC_ENTRY}}", entry(i)).replace("{{LESSON}}", f"[READ THE FILE: {G}/{path(i)}]"))
     print(f"""
 
 === ADDITIONAL INPUTS ===
-Read the lesson file above with the Read tool (the whole file, in chunks with offset/limit if it is large). Also read /Users/zain/projects/cka/guide/00-conventions.md and check the lesson against it, including section 9 (depth: list shallow or list-only subtopics as MAJOR) and sections 10-11.
+Read the lesson file above with the Read tool (the whole file, in chunks with offset/limit if it is large). Also read {G}/00-conventions.md and check the lesson against it, including section 9 (depth: list shallow or list-only subtopics as MAJOR) and sections 10-11.
 You cannot re-run commands. Blocks labelled as real captures: judge them for plausibility and internal consistency (paths, values, units), not as unverified. ACCEPTED LIMITATION: output blocks labelled exactly "EXPECTED OUTPUT (not captured)" that are listed in section 11 under a "Known limitation" paragraph (no live cluster or VM available) must NOT be raised as a major on their own. Everything else (wrong flags, wrong ports, checks that cannot fail or cannot pass, unsourced exam claims, missing entry items) is in scope.
 Do not edit the lesson. Do not read any earlier review report for this topic.
-Write your report to /Users/zain/projects/cka/guide/reviews/{rep} (table "Severity | Section | Problem | Fix", then a final line "VERDICT: PASS" or "VERDICT: FAIL") and reply with only the verdict and the number of blocker/major/minor items.
+Write your report to {G}/reviews/{rep} (table "Severity | Section | Problem | Fix", then a final line "VERDICT: PASS" or "VERDICT: FAIL") and reply with only the verdict and the number of blocker/major/minor items.
 Exam facts may be checked against summary §2:
 {sec(2)}
 """)
 elif kind == "fix":
     print(blocks[2].replace("{{REVIEW_REPORT}}", f"[READ THE FILE: {sys.argv[3]}]"))
-    print(f"\nWrite the full corrected lesson back to /Users/zain/projects/cka/guide/{path(i)} and append the changelog at the end of /Users/zain/projects/cka/guide/reviews/{i}-review.md. Reply with the changelog only.")
+    print(f"\nWrite the full corrected lesson back to {G}/{path(i)} and append the changelog at the end of {G}/reviews/{i}-review.md. Reply with the changelog only.")
