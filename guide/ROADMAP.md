@@ -28,10 +28,10 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 |---|---|---|---|
 | T2.01 | [Kubernetes architecture and the API model](part2-basics/T2.01-kubernetes-architecture-and-the-api-model.md) | 3 | written (1 review + 1 fix) |
 | T2.02 | [kubectl fluency and productivity](part2-basics/T2.02-kubectl-fluency-and-productivity.md) | 4 | written (1 review + 1 fix) |
-| T2.03 | Pods in depth | 3 | not written yet |
+| T2.03 | [Pods in depth](part2-basics/T2.03-pods-in-depth.md) | 3 | ready |
 | T2.04 | [Labels, selectors, annotations and namespaces](part2-basics/T2.04-labels-selectors-annotations-and-namespaces.md) | 2 | written (1 review + 1 fix) |
 | T2.05 | [Controllers: ReplicaSets, Deployments (basics) and garbage collection](part2-basics/T2.05-controllers-replicasets-deployments-basics-and-garbage.md) | 2 | written (1 review + 1 fix) |
-| T2.06 | Services and EndpointSlices fundamentals | 2 | not written yet |
+| T2.06 | [Services and EndpointSlices fundamentals](part2-basics/T2.06-services-and-endpointslices-fundamentals.md) | 2 | written (1 review + 1 fix) |
 | T2.07 | [Declarative object management: apply, diff, patch, replace](part2-basics/T2.07-declarative-object-management-apply-diff-patch.md) | 2 | written (1 review + 1 fix) |
 | T2.08 | [Events, describe and reading object status](part2-basics/T2.08-events-describe-and-reading-object-status.md) | 1.5 | written (1 review + 1 fix) |
 | T2.09 | [Local practice clusters: kind and minikube](part2-basics/T2.09-local-practice-clusters-kind-and-minikube.md) | 1.5 | written (1 review + 1 fix) |
@@ -42,28 +42,28 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 | ID | Topic | Hours | Status |
 |---|---|---|---|
 | T3.01 | [Define, build and modify container images](part3-ckad/T3.01-define-build-and-modify-container-images.md) | 3 | written (1 review + 1 fix) |
-| T3.02 | Choose and use the right workload resource | 4 | not written yet |
+| T3.02 | [Choose and use the right workload resource](part3-ckad/T3.02-choose-and-use-the-right-workload.md) | 4 | ready |
 | T3.03 | [ConfigMaps](part3-ckad/T3.03-configmaps.md) | 2 | written (1 review + 1 fix) |
-| T3.04 | Create & consume Secrets | 2 | not written yet |
+| T3.04 | [Create & consume Secrets](part3-ckad/T3.04-create-consume-secrets.md) | 2 | written (1 review + 1 fix) |
 | T3.05 | [Define resource requirements](part3-ckad/T3.05-define-resource-requirements.md) | 2 | written (1 review + 1 fix) |
-| T3.06 | Requests, limits and quotas: ResourceQuota and LimitRange | 2.5 | not written yet |
-| T3.07 | Utilize persistent and ephemeral volumes | 3.5 | not written yet |
-| T3.08 | Multi-container Pod patterns: init, sidecar, adapter, ambassador | 3 | not written yet |
+| T3.06 | [Requests, limits and quotas: ResourceQuota and LimitRange](part3-ckad/T3.06-requests-limits-and-quotas-resourcequota-and.md) | 2.5 | written (1 review + 1 fix) |
+| T3.07 | [Utilize persistent and ephemeral volumes](part3-ckad/T3.07-utilize-persistent-and-ephemeral-volumes.md) | 3.5 | written (1 review + 1 fix) |
+| T3.08 | [Multi-container Pod patterns: init, sidecar, adapter, ambassador](part3-ckad/T3.08-multi-container-pod-patterns-init-sidecar.md) | 3 | written (1 review + 1 fix) |
 | T3.09 | [Implement probes and health checks](part3-ckad/T3.09-implement-probes-and-health-checks.md) | 2.5 | ready |
-| T3.10 | Deployments and rolling updates | 2.5 | not written yet |
-| T3.11 | Deployment strategies with primitives: blue/green and canary | 2 | not written yet |
+| T3.10 | [Deployments and rolling updates](part3-ckad/T3.10-deployments-and-rolling-updates.md) | 2.5 | ready |
+| T3.11 | [Deployment strategies with primitives: blue/green and canary](part3-ckad/T3.11-deployment-strategies-with-primitives-blue-green.md) | 2 | ready |
 | T3.12 | [Provide and troubleshoot access to applications via Services](part3-ckad/T3.12-provide-and-troubleshoot-access-to-applications.md) | 3 | written (1 review + 1 fix) |
-| T3.13 | Use Ingress rules to expose applications | 2.5 | not written yet |
-| T3.14 | Demonstrate basic understanding of NetworkPolicies | 3 | not written yet |
-| T3.15 | Understand ServiceAccounts | 2 | not written yet |
-| T3.16 | Understand authentication, authorization and admission control | 3 | not written yet |
+| T3.13 | [Use Ingress rules to expose applications](part3-ckad/T3.13-use-ingress-rules-to-expose-applications.md) | 2.5 | ready |
+| T3.14 | [Demonstrate basic understanding of NetworkPolicies](part3-ckad/T3.14-demonstrate-basic-understanding-of-networkpolicies.md) | 3 | ready |
+| T3.15 | [Understand ServiceAccounts](part3-ckad/T3.15-understand-serviceaccounts.md) | 2 | ready |
+| T3.16 | [Understand authentication, authorization and admission control](part3-ckad/T3.16-understand-authentication-authorization-and-admission-control.md) | 3 | written (1 review + 1 fix) |
 | T3.17 | Understand Application Security: SecurityContexts and capabilities | 2.5 | not written yet |
-| T3.18 | Discover and use resources that extend Kubernetes: CRDs and Operators | 2.5 | not written yet |
-| T3.19 | Use Helm to deploy existing packages | 2.5 | not written yet |
-| T3.20 | Kustomize | 2.5 | not written yet |
-| T3.21 | Understand API depreciations (API deprecations and migration) | 2 | not written yet |
+| T3.18 | [Discover and use resources that extend Kubernetes: CRDs and Operators](part3-ckad/T3.18-discover-and-use-resources-that-extend.md) | 2.5 | written (1 review + 1 fix) |
+| T3.19 | [Use Helm to deploy existing packages](part3-ckad/T3.19-use-helm-to-deploy-existing-packages.md) | 2.5 | written (1 review + 1 fix) |
+| T3.20 | [Kustomize](part3-ckad/T3.20-kustomize.md) | 2.5 | ready |
+| T3.21 | [Understand API depreciations (API deprecations and migration)](part3-ckad/T3.21-understand-api-depreciations-api-deprecations-and.md) | 2 | written (1 review + 1 fix) |
 | T3.22 | Utilize container logs | 1.5 | not written yet |
-| T3.23 | Use built-in CLI tools to monitor Kubernetes applications | 1.5 | not written yet |
+| T3.23 | [Use built-in CLI tools to monitor Kubernetes applications](part3-ckad/T3.23-use-built-in-cli-tools-to.md) | 1.5 | ready |
 | T3.24 | Debugging in Kubernetes | 3 | not written yet |
 
 ## Part 4 - CKA
@@ -76,24 +76,24 @@ All 76 topics in learning order. Written lessons are links; the rest are planned
 | T4.04 | [Manage the lifecycle of Kubernetes clusters: upgrades, etcd backup/restore, certificates, node maintenance](part4-cka/T4.04-manage-the-lifecycle-of-kubernetes-clusters.md) | 5 | written (1 review + 1 fix) |
 | T4.05 | [Implement and configure a highly-available control plane](part4-cka/T4.05-implement-and-configure-a-highly-available.md) | 3.5 | written (1 review + 1 fix) |
 | T4.06 | Manage role based access control (RBAC) | 3 | not written yet |
-| T4.07 | Use Helm and Kustomize to install cluster components | 2.5 | not written yet |
-| T4.08 | Understand CRDs, install and configure operators | 2.5 | not written yet |
-| T4.09 | Application deployments: rolling updates and rollbacks (admin view) | 1.5 | not written yet |
-| T4.10 | Use ConfigMaps and Secrets to configure applications (admin view, incl. encryption at rest) | 2 | not written yet |
-| T4.11 | Configure workload autoscaling | 2.5 | not written yet |
-| T4.12 | Primitives for robust, self-healing application deployments | 2 | not written yet |
+| T4.07 | [Use Helm and Kustomize to install cluster components](part4-cka/T4.07-use-helm-and-kustomize-to-install.md) | 2.5 | written (1 review + 1 fix) |
+| T4.08 | [Understand CRDs, install and configure operators](part4-cka/T4.08-understand-crds-install-and-configure-operators.md) | 2.5 | written (1 review + 1 fix) |
+| T4.09 | [Application deployments: rolling updates and rollbacks (admin view)](part4-cka/T4.09-application-deployments-rolling-updates-and-rollbacks.md) | 1.5 | written (1 review + 1 fix) |
+| T4.10 | [Use ConfigMaps and Secrets to configure applications (admin view, incl. encryption at rest)](part4-cka/T4.10-use-configmaps-and-secrets-to-configure.md) | 2 | ready |
+| T4.11 | [Configure workload autoscaling](part4-cka/T4.11-configure-workload-autoscaling.md) | 2.5 | written (1 review + 1 fix) |
+| T4.12 | [Primitives for robust, self-healing application deployments](part4-cka/T4.12-primitives-for-robust-self-healing-application.md) | 2 | written (1 review + 1 fix) |
 | T4.13 | Configure Pod admission and scheduling (limits, node affinity, etc.) | 4 | not written yet |
-| T4.14 | Configure volume types, access modes and reclaim policies | 2 | not written yet |
+| T4.14 | [Configure volume types, access modes and reclaim policies](part4-cka/T4.14-configure-volume-types-access-modes-and.md) | 2 | written (1 review + 1 fix) |
 | T4.15 | Manage persistent volumes and persistent volume claims | 2 | not written yet |
 | T4.16 | Implement storage classes and dynamic volume provisioning | 2 | not written yet |
 | T4.17 | [Understand connectivity between Pods](part4-cka/T4.17-understand-connectivity-between-pods.md) | 2.5 | ready |
-| T4.18 | Use ClusterIP, NodePort, LoadBalancer service types and endpoints | 2.5 | not written yet |
-| T4.19 | Understand and use CoreDNS | 2.5 | not written yet |
-| T4.20 | Define and enforce Network Policies | 2.5 | not written yet |
-| T4.21 | Know how to use Ingress controllers and Ingress resources | 2.5 | not written yet |
+| T4.18 | [Use ClusterIP, NodePort, LoadBalancer service types and endpoints](part4-cka/T4.18-use-clusterip-nodeport-loadbalancer-service-types.md) | 2.5 | ready |
+| T4.19 | [Understand and use CoreDNS](part4-cka/T4.19-understand-and-use-coredns.md) | 2.5 | written (1 review + 1 fix) |
+| T4.20 | [Define and enforce Network Policies](part4-cka/T4.20-define-and-enforce-network-policies.md) | 2.5 | ready |
+| T4.21 | [Know how to use Ingress controllers and Ingress resources](part4-cka/T4.21-know-how-to-use-ingress-controllers.md) | 2.5 | ready |
 | T4.22 | Use the Gateway API to manage Ingress traffic | 3.5 | not written yet |
 | T4.23 | Manage and evaluate container output streams | 1.5 | not written yet |
-| T4.24 | Monitor cluster and application resource usage | 1.5 | not written yet |
+| T4.24 | [Monitor cluster and application resource usage](part4-cka/T4.24-monitor-cluster-and-application-resource-usage.md) | 1.5 | written (1 review + 1 fix) |
 | T4.25 | Troubleshoot cluster components | 4 | not written yet |
 | T4.26 | Troubleshoot clusters and nodes | 4 | not written yet |
 | T4.27 | Troubleshoot services and networking | 3.5 | not written yet |
